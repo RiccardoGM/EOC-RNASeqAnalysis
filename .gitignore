@@ -1,0 +1,32 @@
+# Annotation files
+*.gtf
+*.gtf.gz
+
+# Compressed files
+*.gz
+
+# Large genomics files (optional but recommended)
+*.bam
+*.bai
+*.sam
+*.bed
+*.bed.gz
+*.bigWig
+*.bw
+
+# Temporary / intermediate files
+*.log
+*.tmp
+*.out
+
+# R-related
+.Rhistory
+.RData
+.Rproj.user/
+
+# Python-related
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
