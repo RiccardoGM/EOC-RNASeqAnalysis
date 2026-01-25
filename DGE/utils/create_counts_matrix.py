@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 
-def create_counts_matrices(counts_data_dir, metadata_dir, line_name, counts_mat_dir, batch=None):
+def create_counts_matrix(counts_data_dir, metadata_dir, line_name, counts_mat_dir, batch=None):
     # load metadata
     metadata_file = f"{line_name}_metadata.csv"
     metadata_path = os.path.join(metadata_dir, metadata_file)
