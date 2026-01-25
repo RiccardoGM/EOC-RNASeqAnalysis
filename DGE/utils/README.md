@@ -1,5 +1,3 @@
-# Utils description
-
 ## count_reads.py
 
 This script performs gene-level read counting from RNAseq BAM files using HTSeq-count and a GENCODE annotation file. The script selects a BAM file based on a sample name and index provided via the command line, then runs `htseq-count` to assign aligned reads to genes using exon features
@@ -32,6 +30,8 @@ The script generates a gene-level count table in the specified output directory 
 
 <sample_name>_counts_s#<stranded>.txt
 
+<br><br>
+
 ## submit_slurm_job.sh
 
 This is a SLURM batch script that submits a job to perform gene-level read counting using the `count_reads.py` Python workflow
@@ -63,6 +63,8 @@ Refer to the `count_reads.py` description for details on:
 
 Produces the same gene-level count file as described in `count_reads.py`, written to the configured output directory
 
+<br><br>
+
 ## samples_loop.sh
 
 This script automates the submission of multiple SLURM jobs for HTSeq read counting by looping over a set of BAM files
@@ -88,6 +90,8 @@ Each iteration of the loop submits a separate job to the cluster, which in turn 
 ### Output
 
 For each BAM file, a separate gene-level count table is generated in the configured output directory, as described in `count_reads.py`
+
+<br><br>
 
 ## create_counts_matrix.py
 
